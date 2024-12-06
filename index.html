@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swipeable Images with Draggable Text</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="slide" id="slide1">
+        <img src="./images/images3.jpg" alt="Slide 1">
+        <div class="text-container"></div>
+      </div>
+      <div class="slide" id="slide2">
+        <img src="./images/images3.jpg" alt="Slide 2">
+        <div class="text-container"></div>
+      </div>
+      <div class="slide" id="slide3">
+        <img src="./images/images3.jpg" alt="Slide 3">
+        <div class="text-container"></div>
+      </div>
+    </div>
+    <button id="prevBtn">&lt;</button>
+    <button id="nextBtn">&gt;</button>
+  </div>
+
+  <div class="controls">
+    <button id="addTextBtn">Add Text</button>
+    <label for="fontSize">Font Size:</label>
+    <input type="number" id="fontSize" min="8" max="72" value="16">
+    <label for="fontColor">Font Color:</label>
+    <input type="color" id="fontColor" value="#000000">
+    <label for="fontFamily">Font Family:</label>
+    <select id="fontFamily">
+      <option value="Arial">Arial</option>
+      <option value="Courier New">Courier New</option>
+      <option value="Times New Roman">Times New Roman</option>
+    </select>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
